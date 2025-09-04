@@ -1,17 +1,223 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Test Work</title>
-<style>
-  body{
-background:black;
-  }
-h1{
-color:#fff;
-font-weight:bold;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Portal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #fafafa;
+      color: #222;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0056d2;
+    }
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+    .navbar .auth {
+      display: flex;
+      gap: 15px;
+    }
+    .navbar .auth a {
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    .login {
+      border: 1px solid #0056d2;
+      color: #0056d2;
+    }
+    .register {
+      background: #ff5722;
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #fff, #f9f9f9);
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    /* Search Bar */
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .search-bar input, .search-bar select {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      width: 250px;
+    }
+    .search-bar button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #0056d2;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Banner */
+    .banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      padding: 30px;
+      border-radius: 12px;
+      margin: 0 auto 40px;
+      max-width: 800px;
+      color: white;
+      text-align: left;
+    }
+    .banner-content {
+      flex: 1;
+    }
+    .banner h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .banner button {
+      background: white;
+      color: #0072ff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Categories */
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+    .categories button {
+      padding: 12px 20px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .categories button:hover {
+      border-color: #0056d2;
+      color: #0056d2;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #f2f2f2;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-<h1>Hello World! to Everyone</h1>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">JobPortal</div>
+    <ul>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Companies</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+    <div class="auth">
+      <a href="#" class="login">Login</a>
+      <a href="#" class="register">Register</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Find your dream job now</h1>
+    <p>5 lakh+ jobs for you to explore</p>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Enter skills / designations / companies">
+      <select>
+        <option>Select experience</option>
+        <option>0-1 years</option>
+        <option>2-5 years</option>
+        <option>5+ years</option>
+      </select>
+      <input type="text" placeholder="Enter location">
+      <button>Search</button>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner-content">
+      <h2>Practice customised mock interview with AI!</h2>
+      <p>Your result will be visible only to you</p>
+      <button>Start for free</button>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="categories">
+    <button>Remote</button>
+    <button>MNC</button>
+    <button>Banking & Finance</button>
+    <button>Fortune 500</button>
+    <button>Marketing</button>
+    <button>HR</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 JobPortal. All rights reserved.
+  </footer>
 </body>
 </html>
